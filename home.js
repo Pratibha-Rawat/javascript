@@ -81,3 +81,62 @@ let truth = false ; //boolean
 let groceries = ['apple', 'banana', 'oranges']; //array
 let random ; //undefined
 let nothing = null; //value null
+/strings in javascript
+let fruit = 'banana';
+let moreFruits = 'banana\napple'   //new line
+
+console.log(fruit.length); //measuring the length
+console.log(fruit.indexOf('an')); //finding index of string entered
+console.log(fruit.slice(2 , 6));  //slicing
+console.log(fruit.replace('ban', '123')); //replace function
+console.log(fruit.toUpperCase(fruit));   //Lowercase
+console.log(fruit.toLowerCase(fruit));   //Uppercase
+console.log(fruit.charAt(2)); //finding the character at 2 index
+console.log(fruit[2]); //same functionaluty as above
+console.log(fruit.split(','));  //split by a comma
+console.log(fruit.split('')); 
+
+//14 DECEMBER 2020
+//Arrays in javascript
+
+//ways to declare array
+let fruits = ['banana', 'apple', 'orange','pineapples'];
+fruits = new Array('banana', 'apple', 'orange','pineapples');
+
+console.log(fruits[1]); //access values at index 1
+
+//chnaging the values
+fruits[0] = 'pear';
+console.log(fruits);
+
+for (let i =0 ; i< fruits.length ; i++)
+{
+    console.log(fruits[i]);
+}
+
+//array common methods
+console.log(fruits.toString()); //converting to string
+console.log(fruits.join('-'));  //separating by different values
+console.log(fruits.pop(), fruits); //will pop the last element
+console.log(fruits.push('blackberry'), fruits); //will push an element in array
+console.log(fruits[4]); 
+fruits[fruits.length] = 'new fruit'; //same as push
+console.log(fruits);
+fruits.shift(); //remove first element from an array
+console.log(fruits);
+fruits.unshift('kiwi'); //add first element to an array
+console.log(fruits);
+
+let vegetables = ['potato', 'tomato', 'brocoli'];
+//combining fruits and vegetable array together
+let Groc = fruits.concat(vegetables);
+console.log(Groc);
+console.log(Groc.slice(1 , 4)); //slicing the array
+console.log(Groc.reverse());  //reverse the array
+console.log(Groc.sort());
+
+//sorting an array
+let nos = [5 , 12 , 32 , 88 , 11 , 1 , 45 , 67 ];
+console.log(nos.sort(function(a, b) { return a-b})); //ascending order
+console.log(nos.sort(function(a, b) { return b-a})); //descending order
+
